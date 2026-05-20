@@ -22,3 +22,4 @@ def test_auto_submit_when_disconnect_more_than_5_without_accommodation():
     )
 
     assert result == "Auto Submit Exam"
+    
