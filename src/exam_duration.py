@@ -7,13 +7,7 @@ def process_exam(
 ):
     if exam_duration > 150:
         return "Invalid Exam"
-    
-    if accomodation_status == True:
-        if exam_duration <= 150:
-            return "Exam Accepted"
-        
-    if exam_duration < 120:
+    elif accomodation_status or exam_duration < 120:
         return "Exam Accepted"
-    
-    if exam_duration >= 120:
+    else:
         return "Exam Rejected"
