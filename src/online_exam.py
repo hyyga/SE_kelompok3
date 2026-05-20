@@ -5,4 +5,7 @@ def evaluate_exam(
     login_time,
     is_public_holiday
 ):
-    return -1
+    if disconnect_duration > 5:
+        return "Auto Submit Exam"
+
+    return "Exam Accepted"
